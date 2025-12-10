@@ -299,7 +299,7 @@
         const id = params.get("id");
 
         async function getInvoiceData() {
-            const url = "http://localhost:3011/website/booking/invoice/" + id;
+            const url = "https://api.silvertaxi.in/website/booking/invoice/" + id;
             const res = await fetch(url, {
                 headers: { "x-domain": "https://bookings.silvertaxi.in" }
             });
